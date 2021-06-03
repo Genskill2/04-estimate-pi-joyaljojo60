@@ -9,7 +9,7 @@ float wallis_pi(int n)
   float pi=1.0;
   float k;
   for(int i=1;i<=n;i++)
-  {  float k=4*i*i;
+  {  k=4*i*i;
   pi*=(float)(k)/(k-1);
   }
   return pi*2.0;
