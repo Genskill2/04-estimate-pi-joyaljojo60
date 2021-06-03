@@ -5,11 +5,11 @@
 
 float wallis_pi(int n)
 {
-  float pi=1;
+  float pi=1.0;
   for(int i=1;i<=n;i++)
   {pi*=(1/(1-(1/(4*i*i))));
   }
-  return pi*2;
+  return pi*2.0;
 }
 
 int main(void) {
