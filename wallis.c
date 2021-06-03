@@ -5,7 +5,6 @@
 
 float wallis_pi(int iterations)
 {
-
 float pi=1.0;
 int n=1;
 int i=1;
