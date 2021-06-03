@@ -7,7 +7,7 @@ float wallis_pi(int n)
 {
   float pi=1;
   for(int i=1;i<=n;i++)
-  {pi*=(1/(1-(1/(4*n*n))));
+  {pi*=(1/(1-(1/(4*i*i))));
   }
   return pi*2;
 }
