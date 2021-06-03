@@ -3,14 +3,14 @@
 #include <stdio.h>
 #include <math.h>
 
-float wallis_pi(int t)
+float wallis_pi(int iterations)
 {
 
 float pi=1.0;
 int n=1;
 int i=1;
 
-for(i=1;i<=t;i++)
+for(i=1;i<=iterations;i++)
 {
 
 n=4*i*i;
