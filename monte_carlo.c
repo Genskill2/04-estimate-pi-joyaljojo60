@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <math.h>
 
+float mc_pi(int);
 
 float frandom() {
   long int q = random();
@@ -38,28 +39,24 @@ int main(void) {
   }
 }
 
-float mc_pi(int iterations)
+float mc_pi(int n)
 {
-
-float x=0, y=0;                       //x and y coordinates
-int circle_points=0;                  // Declaring points inside the circle                
-float d; 
-float area;                             // Declaring distance and area
-
-                          
-for(int i=0;i<iterations;i++)
-{
-
-x=frandom();                        //geting random values of x and y from frandom function
-y=frandom();
-
-if(sqrt(x*x+y*y)<=1)               //checking if the points lie inside the circle
-if((x*x+y*y)<=1)               //checking if the points lie inside the circle
-circle_points+=1; 
-
-}
-area = (float)(4*circle_points)/iterations;
-return (area);
+  float x_cor,y_cor,pi;
+  double dist;
+  int i=0,cc;
+  cc=0;
+  while(i<=n)
+  {
+  x_cor=frandom();
+  y_cor=frandom();
+    dist=x_cor*x_cor+y_cor*y_cor;
+    if (dist<=1.0)
+    {
+      cc++;
+    }
+    i++;
+  }
+  pi=(float)4*cc/n;
+  return pi;
   
 }
-
