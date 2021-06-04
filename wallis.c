@@ -17,7 +17,6 @@ pi*= (float)(n)/(n-1);
 return pi*2.0;
 }
 
-
 int main(void) {
   float pi;
   for (int i=0; i<5; i++) {
